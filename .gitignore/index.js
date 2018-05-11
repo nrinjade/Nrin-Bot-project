@@ -4,8 +4,7 @@ const client = new Discord.Client();
 
 var prefix = ">=";
 
-client.login("NDM3MjIzMDE5MTU3Mzg5MzE0.DdXSLA.Its0nh90tBKewOKQ4sUBW1iHLLc");
-
+client.login(process.env.TOKEN);
 client.on ("ready",() => {
     console.log("Hay haaay! Je suis là, pour vous aider.")
     client.user.setGame("Prefix:(>=) Mentionnes NrinjadeII pour plus d'informations")
