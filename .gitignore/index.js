@@ -23,7 +23,7 @@ client.on("message", message =>{
         message.reply ("Version actuelle:0.0.0.1 Alpha 2de Partie");
         console.log('Nrinjade III dit la version');
 
-    if(message.content === prefix + "mappe"){
+    if(message.content === prefix + "carte"){
         message.reply ("C'est la Caaarte!" + " " + "https://cdn.discordapp.com/attachments/436489984854196235/444571876627578881/Mappen_da_Pinter.png");
         console.log('Nrinjade III donne la carte');
 
@@ -36,17 +36,6 @@ client.on("message", message =>{
         .setFooter("Sielte, L&D, Nrinjade, Nrscist: --Menu d'aide-- --Depuis 2018--")
         message.channel.sendMessage(legion_embed);
         console.log("Nrinjade III récite la liste des noms des légionnaires")
-
-    if(message.content === prefix + "leg"){
-        var legion_embed = new Discord.RichEmbed()
-        .setColor("#610B5E")
-        .setTitle("Liste des membres de la Légion du Kastelpônten")
-        .setDescription("Mes chers légionnaires sont listés ici")
-        .addField("Liste:")
-        .setFooter("Sielte, L&D, Nrinjade, Nrscist: --Menu d'aide-- --Depuis 2018--")
-        message.channel.sendMessage(legion_embed);
-        console.log("Nrinjade III récite la liste des noms des légionnaires")
-    }
 
     if(message.content === prefix + "provincesliste"){
         var pl_embed = new Discord.RichEmbed()
